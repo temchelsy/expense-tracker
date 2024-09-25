@@ -1,26 +1,22 @@
-import { useState } from 'react'
-import { Navigate, Outlet, Route, Routes} from 'react-router-dom'
-import signIn from './pages/auth/sign-in'
-import signUp from './pages/auth/sign-up'
-import setting from './pages/setting'
-import dashboard from './pages/dashboard'
-import transaction from './pages/transaction'
-import accountPages from './pages/accountPage'
-
-
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { AppContextProvider } from "./providers/app-context";
+import Login from "./pages/auth/login";
+import Register from "./pages/auth/register";
+import Dashboard from './pages/dashboard';
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return  <main>
-    <div>
-      <Routes>
-         <Route path='/sign-in' element={<signIn />} />
-         <Route path='/sign-up' element={<signUp />} />
-      </Routes>
-    </div>
-  </main>
-  
+  return (
+    <AppContextProvider>
+      <Router> {/* Make sure there's only one Router here */}
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </Router>
+    </AppContextProvider>
+  );
 }
 
-export default App 
+export default App;
