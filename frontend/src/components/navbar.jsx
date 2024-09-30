@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className='w-full  flex items-center justify-between py-6'>
       <div className='flex items-center gap-2 cursor-pointer'>
-        <div className='w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-violet-700 rounded-xl'>
+        <div className='w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-violet-600 rounded-xl'>
           <RiCurrencyLine className='text-white text-3xl hover:animate-spin' />
         </div>
         <span className='text-xl font-bold text-black dark:text-white'>
