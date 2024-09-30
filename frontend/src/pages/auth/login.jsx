@@ -102,8 +102,8 @@ export default function Login() {
         </form>
         <h4 className="text-primary mt-6">Don't Have An Account?</h4>
         <Link
-          to="/register" 
-          className="w-full bg-secondary text-white py-2 rounded-md hover:bg-secondary-dark transition-colors mt-2 text-center"
+          to="/Register" 
+          className="w-full bg-secondary text-white py-2 rounded-md hover:bg-secondary-white transition-colors mt-2 text-center"
         >
           Register Here
         </Link>

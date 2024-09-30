@@ -158,7 +158,7 @@ export default function Register() {
         </form>
         <h4 className="text-primary mt-6">Already have an account?</h4>
         <Link
-          to="/login"
+          to="/Login"
           className="w-full bg-secondary text-white py-2 rounded-md hover:bg-secondary-dark transition-colors mt-2 text-center"
         >
           Login
